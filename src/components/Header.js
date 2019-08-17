@@ -1,8 +1,10 @@
 import React from 'react';
+import './Header.css';
 
-export default function Header() {
+function Header() {
   return (
-    <h1>Meme-inator!!!</h1>
+    <header>Meme-in-ator!!!</header>
   );
 }
 
+export default Header;

@@ -1,6 +1,6 @@
 .meme {
   height: 300px;
-  width: 300px;
+  width: 500px;
   padding-top: 20px;
   border: 1px solid black;
   background-size: cover;
@@ -16,7 +16,7 @@
 
 .bottom {
   position: absolute;
-  bottom: 20%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

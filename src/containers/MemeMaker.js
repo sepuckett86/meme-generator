@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Meme from '../components/Meme';
 import MemeInput from '../components/MemeInput';
+import './MemeMaker.css';
 
 export default class MemeMaker extends Component {
   state = {
@@ -23,10 +24,10 @@ export default class MemeMaker extends Component {
 
   render() {
     return (
-      <>
+      <section>
         <MemeInput onChange={this.handleChange} onUrlClick={this.handleUrlClick} memeState={this.state}/>
         <Meme memeState={this.state}/>
-      </>
+      </section>
     );
   }
 }
