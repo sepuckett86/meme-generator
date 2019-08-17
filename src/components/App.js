@@ -1,6 +1,5 @@
 import React from 'react';
-import MemeMaker from './MemeMaker';
-import Meme from './Meme';
+import MemeMaker from '../containers/MemeMaker';
 import Header from './Header';
 
 export default function App() {
@@ -8,7 +7,6 @@ export default function App() {
     <>
       <Header />
       <MemeMaker />
-      <Meme />
     </>
   );
 }
