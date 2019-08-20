@@ -3,7 +3,7 @@ import Meme from '../components/Meme';
 import MemeInput from '../components/MemeInput';
 import styles from './MemeMaker.css';
 import domtoimage from 'dom-to-image';
-import FileSaver, { saveAs } from 'file-saver';
+import FileSaver from 'file-saver';
 
 export default class MemeMaker extends Component {
   state = {
@@ -13,7 +13,7 @@ export default class MemeMaker extends Component {
     footer: '',
     headerColor: '#000000',
     footerColor: '#000000',
-    displayedImage: 'https://imgflip.com/s/meme/Satisfied-Seal.jpg'
+    displayedImage: 'https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
   }
 
   handleChange = ({ target }) => {
@@ -25,8 +25,6 @@ export default class MemeMaker extends Component {
   }
 
   handleUpload = ({ target }) => {
-    console.log(target.files[0]);
-    console.log(window.URL.createObjectURL(target.files[0]));
     this.setState({ uploadedImage: window.URL.createObjectURL(target.files[0]) });
   }
 
