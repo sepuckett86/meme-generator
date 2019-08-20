@@ -1,0 +1,22 @@
+.meme {
+  height: 300px;
+  width: 500px;
+  padding-top: 20px;
+  border: 1px solid black;
+  background-size: cover;
+  position: relative;
+}
+
+.top {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
