@@ -17,7 +17,7 @@ function Meme({ meme }) {
 
   return (
     <>
-      <div className={styles.meme} style={backgroundImage}>
+      <div id="meme" className={styles.meme} style={backgroundImage}>
         <p className={styles.top} style={headerColor}>{meme.header}</p>
         <p className={styles.bottom} style={footerColor}>{meme.footer}</p>
       </div>
