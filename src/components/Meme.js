@@ -2,31 +2,31 @@ import React from 'react';
 import styles from './Meme.css';
 import PropTypes from 'prop-types';
 
-function Meme({ memeState }) {
+function Meme({ meme }) {
   const backgroundImage = {
-    backgroundImage: `url('${memeState.displayedUrl}')`
+    backgroundImage: `url('${meme.displayedImage}')`
   };
 
   const headerColor = {
-    color: memeState.headerColor
+    color: meme.headerColor
   };
 
   const footerColor = {
-    color: memeState.footerColor
+    color: meme.footerColor
   };
 
   return (
     <>
       <div className={styles.meme} style={backgroundImage}>
-        <p className={styles.top} style={headerColor}>{memeState.header}</p>
-        <p className={styles.bottom} style={footerColor}>{memeState.footer}</p>
+        <p className={styles.top} style={headerColor}>{meme.header}</p>
+        <p className={styles.bottom} style={footerColor}>{meme.footer}</p>
       </div>
     </>
   );
 }
 
 Meme.propTypes = {
-  memeState: PropTypes.object.isRequired
+  meme: PropTypes.object.isRequired
 };
 
 export default Meme;
